@@ -98,6 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cac="sudo systemctl start pcscd && sudo systemctl enable pcscd"
+alias update="sudo dnf update && flatpak update"
 
 #add the intel compilers
 #!/usr/bin/env bash
@@ -106,4 +107,8 @@ PATH=/opt/intel/bin:$PATH
 alias vtune="/opt/intel/parallel_studio_xe_2020.2.108/vtune_profiler_2020/bin64/vtune-gui"
 alias advisor="/opt/intel/parallel_studio_xe_2020.2.108/advisor_2020/bin64/advixe-gui"
 alias inspector="/opt/intel/parallel_studio_xe_2020.2.108/inspector_2020/bin64/inspxe-gui"
+alias dropbox="python3 ~/dropbox.py"
 
+PATH=/usr/local/bin:$PATH
+PATH=/usr/local/include:$PATH
+export LD_LIBRARY_PATH="/usr/local/lib"
